@@ -49,12 +49,15 @@ Following components were used to design this project:
 4) Updated the public IP as A record in DNS record with domain name aditirocks.store, screenshot below.
    ![Domain name](./files/domainname.png)
 5) Run the helm chart with below command
-   ```helm upgrade --install gitlab ./gitlab_helm_chart 
+   ```
+    helm upgrade --install gitlab ./gitlab_helm_chart 
     --timeout 600s 
     --set global.hosts.domain=test.aditirocks.store 
     --set global.hosts.externalIP=34.132.38.59
-    --set certmanager-issuer.email=aditi@gitlab.com -n git```
+    --set certmanager-issuer.email=aditi@gitlab.com -n git
+	```
 
 <a name="output"></a>
 ## Outputs
 Outputs captured here [output.docx](./output.docx)
+
